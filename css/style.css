@@ -155,36 +155,54 @@ footer {
     /* Header */
     header {
         /* Set the background color to white */
+        background-color: white;
         
     }
 
     /* Body */
     body {
         /* Set background color to a light gray (whitesmoke) */
-        
+        background-color: gray, whitesmoke;
     }
 
     /* Images */
     #dumperimg {
         /* Set width to 60%, padding of 2%, float to right, and clear to right */
-      
+      width: 60%;
+      padding: 2%;
+      float: right;
+      clear: right;
     }
 
     #trumpimg, #designskoleimg {
         /* Set width to 60%, padding of 2%, float to the left and clear to left */
-       
+       width: 60%;
+       padding: 2%;
+       float: left;
+       clear: left;
     }
 
     #designskoleimg {
         /* Set width to 60%, padding of 2%, float to the right and clear to right */
-       
+       width: 60%;
+       padding: 2%;
+       float: right;
+       clear: right;
     }
+
+        /* Logo 
+    footer {
+        display:flex;
+        float: inline;
+    }
+        */
 
 
 
     /* Logo */
     #logo2 {
         /* Set max-width to 60px */
+        max-width: 60px;
         
     }
 }
@@ -193,35 +211,42 @@ footer {
 
     /* tablet setting*/
     /* set min width to 700 pixels */
-    @media only screen and (  ) {
+    @media only screen and (min-width: 700px) {
         /* Header */
         header {
             /* Set background color to black and height to 30px */
             /* background-color: ___; */
             /* height: ___; */
+            background-color: black;
+            height: 30px;
         }
     
         /* Body */
         body {
             /* Set background color to white */
             /* background-color: ___; */
+            background-color: white;
         }
     
         /* Navigation */
         #navigation-icon {
             /* Hide navigation icon */
             /* display: ___; */
+            display: none;
         }
     
         #navigation-desktop {
             /* Show desktop navigation (hint value Display: block) and align text to the right */
             /* display: ___; */
             /* text-align: ___; */
+            display: block;
+            text-align: right;
         }
     
         #navigation-desktop li {
             /* Display items inline */
             /* display: ___; */
+            display: inline;
         }
     
         #navigation-desktop li a {
@@ -231,11 +256,18 @@ footer {
             /* font-size: ___; */
             /* margin: ___; */
             /* padding: ___; */
+            color: white;
+            text-decoration: none;
+            font-size: 1.6rem;
+            margin: 2%;
+            padding: 2%;
+
         }
     
         #navigation-desktop li a:hover {
             /* Set underline on hover */
             /* text-decoration: ___; */
+            text-decoration: underline;
         }
     
         #navigation-mobile {
@@ -252,24 +284,28 @@ footer {
         /* Footer */
         footer {
             /* Set background color to black and text color to white */
-            
+            background-color: black;
+            color: white;
+
         }
     
         /* Content */
         section {
             /* Add padding of 2% */
-          
+          padding: 2%;
         }
     
         /* Flex Container */
         .flex-container {
             /* Enable flex display and flex-wrap */
-         
+            display: flex;
+            flex-wrap: wrap;
         }
     
         article {
             /* Set width to 46% and margin to 1% */
-           
+           width: 46%;
+           margin: 1%;
         }
 
         #dumperimg {
@@ -291,7 +327,7 @@ footer {
 
     /* desktop setting */
     /* set min width to 1100 pixels */
-    @media only screen and () {
+    @media only screen and (min-width: 1100px) {
         header {
             background-color: black;
         }
