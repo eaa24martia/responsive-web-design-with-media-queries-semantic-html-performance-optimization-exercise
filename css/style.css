@@ -83,10 +83,28 @@ header {
 /*navigation her*/
 
 
+.black-box {
+    background-color: black;
+    height: 40px; 
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; 
+}
+
+.dr-logo-top {
+        position: absolute; /* Allows for precise placement */
+        top: 3px; /* Adjusts vertical position */
+        left: -5px; /* Adjusts horizontal position */
+        width: 7rem; /* Adjust logo size as needed */
+        height: auto; /* Maintains aspect ratio */
+}
+
 .burger {
     width: 30px;
     height: 4px;
-    background-color: black;
+    background-color: rgb(255, 255, 255);
     margin: 5px 0;
 }
 
@@ -111,7 +129,7 @@ header {
 }
 
 #navigation-mobile li a {
-    color: #000;
+    color: #ffffff;
     text-decoration: none;
 }
 
@@ -159,10 +177,22 @@ footer {
         
     }
 
+    .black-box,
+    .dr-logo-top {
+        display: none;
+    }
+
+    @media (max-width: 700px) {
+        .black-box,
+        .dr-logo-top {
+            display: block; /* This will ensure they are displayed */
+        }
+    }
+
     /* Body */
     body {
         /* Set background color to a light gray (whitesmoke) */
-        background-color: gray, whitesmoke;
+        background-color: gray,;
     }
 
     /* Images */
